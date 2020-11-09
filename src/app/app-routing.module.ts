@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'coming-soon',
     loadChildren: () => import('./coming-soon/coming-soon.module').then( m => m.ComingSoonPageModule)
   },
+  {
+    path: 'loading-screen',
+    loadChildren: () => import('./loading-screen/loading-screen.module').then( m => m.LoadingScreenPageModule)
+  },
 ];
 
 @NgModule({
