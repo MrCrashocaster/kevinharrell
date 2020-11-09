@@ -1,0 +1,48 @@
+<ion-content fullscreen class="background" style="background-color: black;" scroll-y="false">
+  <ion-slides style="background-color: black">
+    <ion-slide>
+      <ion-grid>
+        <ion-row class="ion-col">
+          <form [formGroup]="registerForm">
+            <ion-label class="register-caption">Register</ion-label>
+
+            <ion-item color="white">
+              <ion-label position="floating" class="displayname-caption">Display Name:<ion-text color="danger"> *
+                </ion-text>
+              </ion-label>
+              <ion-input style="color:white;" formControlName="name" type="text" clear-input="true"></ion-input>
+            </ion-item>
+
+            <ion-item color="white">
+              <ion-label position="floating" class="email-caption">Email:<ion-text color="danger"> *</ion-text>
+              </ion-label>
+              <ion-input style="color:white;" formControlName="email" type="email" clear-input="true"></ion-input>
+            </ion-item>
+
+            <ion-item color="white">
+              <ion-label position="floating" class="password-caption">Password: <ion-text color="danger"> *</ion-text>
+              </ion-label>
+              <ion-input style="color:white;" formControlName="password" type="password"></ion-input>
+            </ion-item>
+
+            <ion-button (click)="createAccount()" color="primary" shape="round">
+              <ion-icon slot="end" name="person-add"></ion-icon>Create
+            </ion-button>
+            <ion-button routerLink="/login" color="primary" fill="clear"> Login </ion-button>
+
+
+
+
+          </form>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<ion-footer class="footer">
+  <div class="col-md-8">
+    <p style="color: #d9d9d9;">&copy; Copyright 2020, Impaird, LLC | Developed by <a href="https://www.impairdmedia.com"
+        style="color: white; text-decoration: none;">Impaird Media</a>
+    </p>
+  </div>
+</ion-footer>
