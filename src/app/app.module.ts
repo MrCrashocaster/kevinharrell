@@ -16,6 +16,7 @@ import { IonicStorageModule } from "@ionic/storage";
 import { ServicesModule } from './services/services.module';
 import { Camera } from '@ionic-native/camera/ngx';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { IonicHeaderParallaxModule } from 'ionic-header-parallax';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ServicesModule,
     RouterModule, 
     FormsModule,
+    IonicHeaderParallaxModule,
     ReactiveFormsModule,
   ],
   providers: [
