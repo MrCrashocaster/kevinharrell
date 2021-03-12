@@ -13,7 +13,6 @@ import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from "@angular/fire/database" // Real-time Database
 import { AngularFireAuthModule } from "@angular/fire/auth"; 
 import { IonicStorageModule } from "@ionic/storage"; 
-import { ServicesModule } from './services/services.module';
 import { Camera } from '@ionic-native/camera/ngx';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { IonicHeaderParallaxModule } from 'ionic-header-parallax';
@@ -27,7 +26,6 @@ import { IonicHeaderParallaxModule } from 'ionic-header-parallax';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     IonicStorageModule.forRoot(), 
-    ServicesModule,
     RouterModule, 
     FormsModule,
     IonicHeaderParallaxModule,

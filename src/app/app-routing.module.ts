@@ -8,29 +8,22 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'coming-soon',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
-    path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'resume',
+    loadChildren: () => import('./resume/resume.module').then( m => m.ResumePageModule)
   },
   {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: 'landing-page',
-    loadChildren: () => import('./landing-page/landing-page.module').then( m => m.LandingPagePageModule)
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   },
-  {
-    path: 'coming-soon',
-    loadChildren: () => import('./coming-soon/coming-soon.module').then( m => m.ComingSoonPageModule)
-  },
-  {
-    path: 'loading-screen',
-    loadChildren: () => import('./loading-screen/loading-screen.module').then( m => m.LoadingScreenPageModule)
-  },
+  
 ];
 
 @NgModule({
