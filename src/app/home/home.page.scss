@@ -1,6 +1,6 @@
 .footer {
   text-align: center;
-  font-family: "Schnyder Cond M Light";
+  --ion-font-family: 'Schnyder';
   color: #393939;
   font-size: 4vw;
   text-transform: uppercase;
@@ -18,31 +18,60 @@
 }
 
 img {
-  max-height: 80vh;
+  max-width: 100%;
+  max-height: 70vh;
 }
 
 .resume-text-animation {
   background-color: #feffe6;
   font-weight: bold;
-  font-family: "Schnyder Cond M Light";
+  --ion-font-family: 'Schnyder';
   color: black;
   position: relative;
   animation: mymove 5s;
 }
 
-#div1 {animation-timing-function: linear;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-out;}
-#div5 {animation-timing-function: ease-in-out;}
+#div1 {
+  animation-timing-function: linear;
+}
+#div2 {
+  animation-timing-function: ease;
+}
+#div3 {
+  animation-timing-function: ease-in;
+}
+#div4 {
+  animation-timing-function: ease-out;
+}
+#div5 {
+  animation-timing-function: ease-in-out;
+}
 
 @keyframes mymove {
-  0%   {left:0px; top:0px;}
-  17%  {left:40px; top:0px;}
-  34%  {left:40px; top:40px;}
-  51%  {left:-40px; top:40px;}
-  68% {left:-40px; top:0px;}
-  100% {left:0px; top:0px;}
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  17% {
+    left: 40px;
+    top: 0px;
+  }
+  34% {
+    left: 40px;
+    top: 40px;
+  }
+  51% {
+    left: -40px;
+    top: 40px;
+  }
+  68% {
+    left: -40px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
 
 b {
@@ -62,7 +91,6 @@ p b {
 
 @media only screen and (min-width: 900px) {
 }
-
 
 .animated-text {
   height: fit-content;
@@ -138,10 +166,15 @@ p b {
 
   .title {
     text-align: center;
-    font-family: "Schnyder Cond M Light";
+    --ion-font-family: 'Schnyder';
     color: #393939;
     font-size: 3vh;
     text-transform: uppercase;
     font-weight: initial;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 50vh;
   }
 }

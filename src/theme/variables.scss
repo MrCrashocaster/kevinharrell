@@ -3,6 +3,9 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-font-family: 'Schnyder';
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -229,4 +232,11 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+@font-face {
+  font-family: 'Schnyder';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Schnyder\ Cond\ M\ Light.ttf');
 }
