@@ -10,4 +10,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {}
 
+  anio: number = new Date().getFullYear();
+
 }

@@ -1,38 +1,147 @@
 .footer {
+  text-align: center;
+  font-family: "Schnyder Cond M Light";
+  color: #393939;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: initial;
+  font-weight: initial;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
   font-variant-caps: all-petite-caps;
   text-align: center;
-  color: white;
-  background-color: rgb(53, 169, 247);
+  background-color: #feffe6;
+  justify-content: center;
+  display: grid;
 }
 
-.background {
-  text-align: center; 
-  background-color: rgb(53, 169, 247);
+img {
+  max-height: 80vh;
 }
 
-.button-color {
-  color: white;
-  background-color: white;
+.resume-text-animation {
+  background-color: #feffe6;
+  font-weight: bold;
+  font-family: "Schnyder Cond M Light";
+  color: black;
+  position: relative;
+  animation: mymove 5s;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  0%   {left:0px; top:0px;}
+  17%  {left:40px; top:0px;}
+  34%  {left:40px; top:40px;}
+  51%  {left:-40px; top:40px;}
+  68% {left:-40px; top:0px;}
+  100% {left:0px; top:0px;}
+}
+
+b {
+  font-weight: 500;
 }
 
 p {
-  padding: 0 30px;
+  padding: 0 40px;
   font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
 }
 
-ion-item{
-  --ion-item-background:rgb(53, 169, 247) !important;
-  //border-bottom: inset;
-  --border-style: none;
+p b {
+  color: var(--ion-text-color, #000000);
 }
 
-.navbar {
-    font-variant-caps: all-petite-caps;
-    justify-content: center;
-    color: white;
-    background-color: rgb(53, 169, 247);
-    position: fixed;
-    left: 0;
-    bottom: 35px;
-    right: 0;
+@media only screen and (min-width: 900px) {
+}
+
+
+.animated-text {
+  height: fit-content;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  17% {
+    left: 200px;
+    top: 0px;
+  }
+  34% {
+    left: 200px;
+    top: 200px;
+  }
+  51% {
+    left: -200px;
+    top: 200px;
+  }
+  68% {
+    left: -200px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .animated-text {
+    width: auto;
+    height: auto;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes example {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    17% {
+      left: 40px;
+      top: 0px;
+    }
+    34% {
+      left: 40px;
+      top: 40px;
+    }
+    51% {
+      left: -40px;
+      top: 40px;
+    }
+    68% {
+      left: -40px;
+      top: 0px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-family: "Schnyder Cond M Light";
+    color: #393939;
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: initial;
+  }
 }

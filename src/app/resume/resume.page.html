@@ -1,9 +1,80 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>resume</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content fullscreen scroll-y="false">
+  <ion-grid>
+    <ion-row style="justify-content: center;">
+      <h3 class="slide-position-nav" (click)="slideToNext()">Contact</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext1()">Profile</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext2()">Skills</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext3()">Education</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext4()">Experience</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext5()">Projects</h3>
+      <h3 class="slide-position-nav" (click)="slideToNext6()">References</h3>
+    </ion-row>
+    <ion-row>
+      <ion-slides>
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">Welcome</h2>
+          <p style="color: black;">The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a
+            demonstration of proper code use.</p>
+        </ion-slide>
 
-<ion-content>
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">What is Ionic?</h2>
+          <p style="color: black;"><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with
+            web technologies like HTML, CSS, and JavaScript.</p>
+        </ion-slide>
 
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">What is Appflow?</h2>
+          <p style="color: black;"><b>Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a
+            totally new level of app development agility to mobile dev teams.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/friends.png" />
+          <h2 style="color: black;">Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-slide>
+        
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer class="footer">
+  <div>
+    <a href="../home/" style="text-decoration: none; color: rgb(0, 0, 0); padding: 20px;">Home</a>
+    <a href="../resume/" style="text-decoration: none; color: rgb(0, 0, 0); padding: 20px;">Resume</a>
+    <a href="../about/" style="text-decoration: none; color: rgb(0, 0, 0); padding: 20px;">About</a>
+    <a href="../contact/" style="text-decoration: none; color: rgb(0, 0, 0); padding: 20px;">Contact</a>
+    </div>
+    <p style="color: #000000; text-align: center;">&copy; Copyright {{ anio }}, KevinHarrell | Developed by <a
+        href="https://www.kevinharrell.com" style="color: rgb(0, 0, 0); text-decoration: none;"><strong>Kevin
+          Harrell</strong></a><a href="https://docs.google.com/uc?export=download&id=1GPaXPkOtUIikmUYmaGTAWyc2-CEoVEbx"
+        target="_blank" style="text-decoration: none; color: rgb(0, 0, 0);"> | <strong>Download Resume</strong></a>
+    </p>
+</ion-footer>

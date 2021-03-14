@@ -1,0 +1,60 @@
+.slide-position-nav {
+  text-align: center;
+  font-family: "Schnyder Cond M Light";
+  color: #393939;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: initial;
+  padding-left: 20px;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Schnyder Cond M Light";
+  color: #393939;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: initial;
+  font-weight: initial;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-variant-caps: all-petite-caps;
+  text-align: center;
+  background-color: #feffe6;
+  justify-content: center; 
+  display: grid;
+}
+
+.swiper-slide {
+  display: block;
+}
+
+.swiper-slide img {
+  max-height: 50%;
+  max-width: 80%;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ion-color-step-600, #60646b);
+}
+
+p b {
+  color: var(--ion-text-color, #000000);
+}
+
+@media only screen and (max-width: 900px) {
+
+}
+
+@media only screen and (min-width: 900px) {
+
+}
