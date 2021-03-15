@@ -17,6 +17,40 @@
   display: grid;
 }
 
+.title {
+  color: black;
+  border-bottom: 3px double rgba(0,0,0,0.5);
+  font-size: 4vw;
+}
+
+.strong-color {
+  color: red;
+}
+
+.contact-row-padding {
+  padding: 3vh;
+}
+
+.body-title {
+  font-size: 3vw;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.grid-center-text {
+  text-align: center;
+}
+
+.col-center-text {
+  text-align: center;
+}
+
+.body-main {
+  font-size: 2vw;
+  padding: 0 !important;
+  margin: 0;
+}
+
 b {
   font-weight: 500;
 }
@@ -32,8 +66,26 @@ p b {
   color: var(--ion-text-color, #000000);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .body-main {
+    font-size: 6vw;
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .title {
+    color: black;
+    border-bottom: 3px double rgba(0,0,0,0.5);
+    font-size: 6vw;
+  }
+
+  .body-title {
+    font-size: 6vw;
+    padding: 0 !important;
+    margin: 0;
+  }
 }
+
 
 @media only screen and (min-width: 900px) {
 }

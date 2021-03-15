@@ -8,6 +8,31 @@
   padding-left: 20px;
 }
 
+ion-slides {
+  width: 75%;
+  height: 100%;
+}
+
+ion-slide {
+  width: 0;
+}
+
+.body-title {
+  font-size: 3vw;
+  padding: 0 !important;
+  margin: 0;
+}
+
+.col-center-text {
+  text-align: center;
+}
+
+.body-main {
+  font-size: 2vw;
+  padding: 0 !important;
+  margin: 0;
+}
+
 .footer {
   text-align: center;
   --ion-font-family: 'Schnyder';
@@ -34,6 +59,20 @@
 .swiper-slide img {
   max-height: 50%;
   max-width: 80%;
+}
+
+.title {
+  color: black;
+  border-bottom: 3px double rgba(0,0,0,0.5);
+}
+
+.strong-color {
+  color: red;
+}
+
+.slide-body-text {
+  text-align: left;
+  color: black;
 }
 
 b {

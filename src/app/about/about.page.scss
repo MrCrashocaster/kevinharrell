@@ -17,6 +17,16 @@
   display: grid;
 }
 
+.grid-center-text {
+  text-align: center;
+}
+
+.title {
+  color: black;
+  border-bottom: 3px double rgba(0,0,0,0.5);
+  font-size: 4vw;
+}
+
 b {
   font-weight: 500;
 }
@@ -32,7 +42,12 @@ p b {
   color: var(--ion-text-color, #000000);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .title {
+    color: black;
+    border-bottom: 3px double rgba(0,0,0,0.5);
+    font-size: 6vw;
+  }
 }
 
 @media only screen and (min-width: 900px) {
