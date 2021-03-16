@@ -6,15 +6,15 @@
   text-transform: uppercase;
   font-weight: initial;
   padding-left: 20px;
+  justify-content: center;
 }
 
 ion-slides {
   width: 75%;
-  height: 100%;
 }
 
-ion-slide {
-  width: 0;
+ion-content {
+  --background: #feffe6;
 }
 
 .body-title {

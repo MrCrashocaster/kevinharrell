@@ -17,6 +17,10 @@
   display: grid;
 }
 
+ion-content {
+  --background: #feffe6;
+}
+
 .title {
   color: black;
   border-bottom: 3px double rgba(0,0,0,0.5);
